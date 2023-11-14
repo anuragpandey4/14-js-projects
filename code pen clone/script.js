@@ -17,3 +17,9 @@ css.addEventListener("keydown", () => {
 js.addEventListener("keydown", () => {
   outputCode.contentWindow.eval(js);
 });
+
+document.querySelector("#child1").addEventListener("mouseenter", (e) => {
+  gsap.to("#cursor", {
+    transform: "translate(-50%, -50%) scale(1)",
+  });
+});
